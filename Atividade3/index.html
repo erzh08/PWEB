@@ -1,0 +1,138 @@
+<!doctype html>
+<html>
+	<head>
+		<title>Segurança na Web</title>
+		<meta name="author" content="Raul">
+		<link rel="stylesheet" href="style.css">
+	</head>
+
+	<body>
+		<h1>SEGURANÇA NA WEB</h1>
+		<h2 id="sub">Atividade 1</h2>
+		<h4 id="author">Raul Alexandre</h4>
+
+		<h2>Introdução</h2>
+		<p>
+		O tema de Segurança na Web é extremamente amplo, podendo abranger
+		diversas áreas que se relacionam com a internet em geral, mas nem todos
+		estes aspectos serão tratados nesta página, e aqueles que o serão,
+		apresentarão pouca profundidade, por se tratar de uma pesquisa com
+		objetivo de apresentar uma visão ampla do tema.
+		</p>
+
+		<br><br>
+
+		<h2>Segurança na Web</h2>
+		<p>
+		A “<a target="_blank" href="https://developer.mozilla.org/en-US/docs/Web/Security">Segurança na Web</a>”
+		(usada como sinônimo de “Segurança na
+		Internet” em diversos locais), se trata de um ramo da
+		“Segurança de Computadores”, abrangendo a Internet,
+		Navegadores, Websites e redes, com objetivo de estabelecer
+		regras e medidas para se utilizar contra ataques pela Internet.
+		</p>
+
+		<dl>
+			<dt class="item">Man-In-The-Middle (MITM)</dt>
+			<br>
+			<dd>É um tipo de ataque onde a comunicação entre dois
+			participantes (como servidor e cliente) é
+			interceptada e talvez até modificada, com estes
+			acreditando que se trata de uma conexão direta.
+			</dd>
+			<dd>
+			Uma solução é um Secure Context (ou Contexto
+			Seguro, numa tradução livre), que pode ser uma
+			Window ou Worker para o qual certos padrões mínimos de
+			autenticação e confidencialidade devem ser atendidos, e
+			muitas APIs são acessíveis somente perante tal situação. </dd>
+
+			<br>
+
+			<dt class="item">Privacidade de Dados</dt>
+			<br>
+			<dd>
+			Se tratando de privacidade, a conversa pode se
+			extender de forma desnecessária, então o ponto
+			principal a ser tratado aqui é a privacidade de dados
+			trocados entre o servidor e o cliente, por exemplo, que
+			originalmente se dava por uma conexão insegura (HTTP), mas com
+			a chegada do HTTPS, que utilizava o SSL (Secure Sockets Layer,
+			ou Camada de Soquetes Seguros, numa tradução livre), foi possibilitada
+			a troca de dados segura, e depois veio o TLS (Transport Layer Security,
+			ou Segurança da Camada de Transporte, numa tradução livre), que hoje é
+			utilizada em cima de diversos protocolos originalmente inseguros.
+			</dd>
+
+			<br><br>
+
+			<dt class="item">Cross-Site Scripting (XSS)</dt>
+			<br>
+			<dd id="xss">
+			<img alt="Stylized GNU" title="Stylized GNU" style="float:left" id="newgnu" width="100" heigth="100" src="new_gnu.png">
+			É uma forma de exploit que permite que um hacker injete código malicioso do
+			lado do cliente num website, permitindo que os atacantes ultrapassem acessos de
+			controle e se passem por usuários, explorando a confiança do navegador para o
+			conteúdo recebido do servidor.
+			</dd>
+			<br>
+			<dd>
+			Uma solução é o CSP (Content Security Policy, ou Política de Segurança de
+			Conteúdo, numa tradução livre), uma camada de segurança adicional que permite
+			que administradores de servidores reduzam ou eliminem os fatores que poderiam
+			permitir a ocorrência de um ataque de Cross-Site Scripting, fazendo com que o
+			navegador compatível só execute scripts dos domínios marcados como confiáveis.
+			</dd>
+			<dd id="librejsdd">
+			<img alt="LibreJS logo" title="LibreJS logo" style="float:right" id="librejs" width="150" src="librejs.png">
+			Uma outra solução, apresentada pelo projeto
+			<a target="_blank" href="https://www.gnu.org/proprietary/proprietary.html">GNU</a>, é a extensão
+			<a target="_blank" href="https://www.gnu.org/software/librejs/index.html">LibreJS</a>,
+			que bloqueia JavaScript não-trivial e não-livre, ou o
+			bloqueio completo de Scripts
+			nos navegadores.
+			</dd>
+
+			<br><br>
+
+			<dt class="item">JavaScript Malicioso</dt>
+			<br>
+			<dd>
+			Se afastando um pouco do XSS, um site com
+			JavaScript malicioso pode ser capaz de acessar
+			arquivos do dispositivo do usuário, e dois exemplos de
+			soluções são (além das soluções oferecidas acima), o
+			uso de um software em formato
+			<a target="_blank" href="https://docs.flatpak.org/en/latest/sandbox-permissions.html">Flatpak</a>
+			no Linux, que diz oferecer
+			a capacidade de isolá-lo numa SandBox, e o uso da chamada de
+			sistema <a target="_blank" href="https://man.openbsd.org/pledge.2">pledge()</a>,
+			no <a target="_blank" href="">OpenBSD</a>, que permite restringir as operações
+			permitidas ao software.
+			</dd>
+			<br>
+			<img alt="OpenBSD banner" title="OpenBSD banner" src="openbsd.gif" width="400" id="puffy">
+		</dl>
+
+		<br><br>
+
+		<h2>Conclusão</h2>
+		<p>
+		A Segurança da Web é um campo muito amplo, englobando uma gama
+		diversa de questões de segurança que podem ser encontradas nos
+		outros ramos de Segurança de Computadores, e em constante
+		desenvolvimento por conta da importância e do uso da Internet,
+		numa corrida entre atacantes e defensores. </p>
+
+		<p>
+		É necessário sempre analisar suas atitudes, pois por exemplo,
+		ao utilizar um software desatualizado, o usuário pode estar
+		deixando de lado diversas capacidades de segurança
+		desenvolvidas, ou a escolha entre conveniência e segurança.
+		</p>
+
+		<footer>
+
+		</footer>
+	</body>
+</html>

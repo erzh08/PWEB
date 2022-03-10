@@ -1,0 +1,8 @@
+body { margin: 60px; background-color: #464646; color: #ffffff }
+h1, #sub, #author { text-align: center }
+.item { font-weight: bold }
+dd { color: #ffffff; margin-left: auto; margin-right: auto; width: 70em }
+#puffy { margin-left: auto; margin-right: auto; display: block }
+a { color: #8dcff4 }
+a:visited { color: #d4cae2 }
+a:hover { color: #a7d6d5 }
