@@ -1,0 +1,63 @@
+/* general */
+body {
+	background: #110000;
+	margin: 60px;
+	background: linear-gradient(#f1a629, #800) fixed;
+}
+
+main {
+	color: #dddddd;
+	background-color: #111111;
+	margin: auto;
+	padding: 1em;
+	max-width: 850px;
+	border-radius: 20px;
+	border: dashed 1px #555555;
+}
+
+#gnuimg {
+	width: 100px;
+	float: left;
+}
+
+p {
+	margin: 0 1em;
+}
+
+aside {
+	color: gray;
+	font-style: italic;
+	display: block;
+	font-size: small;
+	margin: 15px 5px;
+	text-align: center;
+}
+
+article ul {
+	border-left: .4em solid #bdba00;
+}
+
+li {
+	margin: 5px;
+}
+
+footer {
+	color: #cccccc;
+	background-color: #333333;
+	margin: auto;
+	margin-top: 1em;
+	padding: 1em;
+	max-width: 850px;
+	border-radius: 20px;
+	border: dashed 1px #555555;
+	font-size: small;
+	text-align: center;
+}
+
+a { color: #8dcff4; }
+a:visited { color: #d4cae2; }
+a:hover { color: #a7d6d5; }
+
+h1, #sub, #author { text-align: center; color: #ffffff; }
+
+/* images */
