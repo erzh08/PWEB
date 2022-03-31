@@ -1,0 +1,45 @@
+@media screen and (max-width: 1920px) {
+    div {
+        background-color: yellow;
+    }
+}
+
+@media screen and (max-width: 1080px) {
+    div {
+        background-color: red;
+    }
+}
+
+@media screen and (max-width: 1366px) {
+    div {
+        background-color: plum;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    div {
+        background-color: violet;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    div {
+        background-color: orange;
+    }
+}
+
+@media screen and (max-width: 420px) {
+    div {
+        background-color: teal;
+    }
+}
+
+div {
+    margin: auto;
+    padding: auto;
+    border-radius: 50%;
+    padding: 1em;
+    max-width: 26%;
+    height: 50%;
+    text-align: center;
+}
