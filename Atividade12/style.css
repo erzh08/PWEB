@@ -1,0 +1,17 @@
+body {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    align-items: center;
+    background-color: #222;
+    color: white;
+}
+
+#titulo {
+    text-align: center;
+}
+
+#janela-img {
+    max-width: 200px;
+    max-height: 180px;
+}
