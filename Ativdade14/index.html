@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script src="valid.js"></script>
+        <style>
+            #ceter {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                background-color: #222;
+                height: 100vh;
+                width: 100%;
+            }
+            form {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                height: 100%;
+                width: 100%;
+            }
+            #nome, #email, #comm {
+                margin-bottom: 30px;
+            }
+            form > label {
+                margin-bottom: 10px;
+            }
+            label, h1, h2, p {
+                color: white;
+            }
+            .radio, #buttons {
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                justify-content: center;
+                margin-bottom: 2em;
+            }
+        </style>
+    </head>
+
+    <body>
+        <div id="ceter">
+            <h1>Formulário Principal</h1>
+            <form name="form1" action="" onsubmit="validar()">
+                <label for="nome">Nome:</label>
+                <input type="text" name="nome" id="nome">
+
+                <label for="email">Email:</label>
+                <input type="text" name="email" id="email">
+
+                <label for="comm">Comentário:</label>
+                <textarea name="comm" id="comm">Fuck</textarea>
+
+                <h2>Pesquisa:</h2>
+                <p>Primeira vez nessa pagina?</p>
+                
+                <div class="radio">
+                    <input type="radio" name="prim" value="sim" id="sim" required>
+                    <label for="sim">Sim</label>
+                </div>
+                <div class="radio">
+                    <input type="radio" name="prim" value="nao" id="nao">
+                    <label for="sim">Não</label>
+                </div>
+
+                <div id="buttons">
+                    <input type="submit" name="men" id="men">
+                    <button id="limpa" onclick="limpar()">Limpar</button>
+                </div>
+            </form>
+        </div>
+    </body>
+</html>
