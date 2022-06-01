@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script src="cursos.js"></script>
+        <style>
+            #ceter {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                background-color: #222;
+                height: 100vh;
+                width: 100%;
+            }
+            img {
+                height: 200px;
+            }
+        </style>
+    </head>
+
+    <body>
+        <div id="ceter">
+            <img src="fatec.png">
+            <h1>Escolha o curso desejado</h1>
+            <select name="cursos" id="cursos" onchange="abrirCurso(this)">
+                <option>Escolha um curso</option>
+                <option value="ads">Análise e Desenvolvimento de Sistemas</option>
+                <option value="ea">Eletrônica Automotiva</option>
+                <option value="fm">Fabricação Mecânica</option>
+                <option value="ge">Gestão Empresarial - EAD</option>
+                <option value="gq">Gestão da Qualidade</option>
+                <option value="log">Logística</option>
+                <option value="ma">Manufatura Avançada</option>
+                <option value="pmet">Processos Metalúrgicos</option>
+                <option value="pol">Polímeros</option>
+                <option value="pmec">Projetos Mecânicos</option>
+                <option value="sb">Sistemas Biomédicos </option>
+            </select>
+        </div>
+    </body>
+</html>
